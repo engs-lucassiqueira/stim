@@ -1,0 +1,82 @@
+/* Estilos destas duas telas; as páginas dos colegas usam seus próprios arquivos. */
+.pagina-kaua { color: #d0d6d2; line-height: 1.6; }
+.pagina-kaua a { color: #9be0b7; text-underline-offset: 4px; }
+.pagina-kaua header { gap: 20px 36px; }
+.pagina-kaua .marca { color: #78c99a; font-size: 1.8rem; font-weight: 700; text-decoration: none; }
+.pagina-kaua nav { display: flex; flex-wrap: wrap; gap: 8px 24px; flex: 1; }
+.pagina-kaua nav a { display: inline-flex; align-items: center; min-height: 44px; color: #d0d6d2; font-size: .86rem; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid transparent; }
+.pagina-kaua nav a:hover, .pagina-kaua nav a[aria-current="page"] { color: #9be0b7; border-bottom-color: #78c99a; }
+.pagina-kaua :focus-visible { outline: 3px solid #b8f2cc; outline-offset: 5px; }
+.pagina-kaua .pular-conteudo { position: absolute; left: 12px; top: 8px; z-index: 10; background: #131614; padding: 12px 18px; transform: translateY(-160%); }
+.pagina-kaua .pular-conteudo:focus { transform: translateY(0); }
+.pagina-kaua main { width: min(1240px, calc(100% - 64px)); margin: 44px auto 56px; }
+.pagina-kaua h1 { color: #f1f5f2; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; margin: 6px 0 12px; }
+.pagina-kaua h2 { color: #f1f5f2; font-size: 1.4rem; line-height: 1.3; }
+.pagina-kaua h3 { color: #f1f5f2; line-height: 1.4; }
+.pagina-kaua .cabecalho-pagina { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 32px; }
+.pagina-kaua .sobretitulo { color: #9be0b7; font-size: .75rem; font-weight: 700; letter-spacing: .14em; }
+.pagina-kaua .introducao, .pagina-kaua .texto-secundario { color: #b2bfb6; }
+.pagina-kaua .botao { display: inline-flex; justify-content: center; align-items: center; gap: 18px; min-height: 46px; padding: 10px 20px; border: 1px solid #78c99a; border-radius: 7px; background: #78c99a; color: #101c15; text-decoration: none; font-weight: 600; text-align: center; }
+.pagina-kaua .botao:hover { background: #9be0b7; border-color: #9be0b7; }
+.pagina-kaua .botao.secundario { background: transparent; color: #b4e8c6; border-color: #536d5e; }
+.pagina-kaua .botao.secundario:hover { background: #314438; border-color: #9be0b7; }
+.pagina-kaua .etiqueta { display: inline-block; color: #b4e8c6; background: #263d30; border-radius: 5px; padding: 4px 10px; font-size: .75rem; }
+.pagina-kaua .titulo-secao { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
+.pagina-kaua .titulo-secao > span, .pagina-kaua .titulo-secao > a { font-size: .86rem; }
+.pagina-kaua .nota-demo { color: #b2bfb6; font-size: .8rem; margin-top: 28px; }
+.pagina-kaua .rodape-nota { margin-top: 4px; font-size: .75rem; color: #b2bfb6; }
+@media (max-width: 700px) {
+ .pagina-kaua header { padding: 16px 20px; gap: 8px; align-items: flex-start; }
+ .pagina-kaua nav { flex-basis: 100%; gap: 4px 18px; }
+ .pagina-kaua nav a { font-size: .75rem; }
+ .pagina-kaua main { width: calc(100% - 36px); margin-top: 28px; }
+ .pagina-kaua .cabecalho-pagina { align-items: flex-start; flex-direction: column; gap: 18px; }
+}
+
+.perfil-capa { display: flex; align-items: center; gap: 28px; padding: 36px; background: linear-gradient(115deg, #17251d, #131614 75%); border: 1px solid #536d5e; border-radius: 12px; }
+.avatar { width: 120px; height: 120px; flex-shrink: 0; display: grid; place-items: center; border-radius: 24px; background: #78c99a; color: #13241a; font-size: 2.8rem; font-weight: 700; }
+.identidade { flex: 1; }
+.identidade h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); margin: 8px 0 2px; }
+.identidade > p { color: #b2bfb6; max-width: 50ch; }
+.identidade .apelido { margin-bottom: 12px; }
+.preferencias { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.preferencias span { font-size: .75rem; padding: 3px 10px; border: 1px solid #536d5e; border-radius: 4px; }
+.nivel { display: flex; flex-direction: column; align-items: center; padding-left: 28px; border-left: 1px solid #39443e; flex-shrink: 0; }
+.nivel span, .nivel a { font-size: .8rem; }
+.nivel strong { color: #9be0b7; font-size: 3.4rem; line-height: 1.3; }
+.estatisticas { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid #536d5e; margin-bottom: 34px; }
+.estatisticas > div { padding: 28px 14px; text-align: center; }
+.estatisticas dt { color: #b2bfb6; font-size: .85rem; }
+.estatisticas dd { color: #f1f5f2; font-size: 1.9rem; font-weight: 600; margin-top: 4px; }
+.colunas-perfil { display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px; }
+.painel { padding: 28px; border: 1px solid #39443e; background: #131614; border-radius: 10px; }
+.atividades { list-style: none; }
+.atividades li { display: flex; gap: 16px; align-items: center; padding: 20px 0; border-top: 1px solid #39443e; }
+.atividades li:last-child { padding-bottom: 0; }
+.atividades img { width: 96px; height: 72px; object-fit: cover; border-radius: 6px; }
+.atividades h3 { font-size: 1rem; }
+.atividades p, .atividades .texto-secundario { font-size: .78rem; }
+.tag-atividade { margin-left: auto; font-size: .75rem; text-align: right; color: #b4e8c6; }
+.insignia-perfil { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.insignia-perfil .titulo-secao { margin-bottom: 0; }
+.insignia-perfil > img { width: 90px; height: 90px; object-fit: cover; border-radius: 12px; }
+.insignia-perfil p { color: #b2bfb6; font-size: .85rem; }
+.insignia-perfil .botao { margin-top: auto; }
+.sobre-perfil { display: flex; justify-content: space-between; align-items: center; gap: 28px; margin-top: 24px; }
+.sobre-perfil h2 { margin: 6px 0 12px; }
+.sobre-perfil p:not(.sobretitulo) { max-width: 58ch; color: #b2bfb6; }
+.atalhos { display: flex; flex-direction: column; gap: 12px; flex-shrink: 0; }
+@media (max-width: 960px) { .colunas-perfil { grid-template-columns: 1fr; } .perfil-capa { gap: 20px; padding: 26px; } .avatar { width: 96px; height: 96px; } .nivel { padding-left: 20px; } }
+@media (max-width: 700px) {
+ .perfil-capa { flex-wrap: wrap; padding: 24px; }
+ .identidade { flex-basis: calc(100% - 120px); }
+ .nivel { flex-basis: 100%; flex-direction: row; justify-content: space-between; gap: 16px; border-left: 0; border-top: 1px solid #39443e; padding: 16px 0 0; }
+ .nivel strong { font-size: 2rem; }
+ .estatisticas { grid-template-columns: repeat(2, 1fr); }
+ .estatisticas > div { padding: 20px 8px; }
+ .painel { padding: 22px; }
+ .sobre-perfil { flex-direction: column; align-items: flex-start; }
+ .atalhos { width: 100%; }
+ .tag-atividade { display: none; }
+}
+@media (max-width: 380px) { .identidade { flex-basis: 100%; } .atividades img { width: 68px; height: 64px; } .atividades li { gap: 12px; } }

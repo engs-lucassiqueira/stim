@@ -1,31 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biblioteca | Stim</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="biblioteca.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Biblioteca na Stim, projeto acadêmico de uma plataforma de jogos.">
+  <title>Biblioteca | Stim</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="biblioteca.css">
 </head>
-<body>
-
-    <header>
-        <h2>Stim</h2>
-        <a href="index.html">LOJA</a>
-        <a href="biblioteca.html">BIBLIOTECA</a>
-        <a href="comunidade.html">COMUNIDADE</a>
-        <a href="perfil.html">PERFIL</a>
-        <a href="reviews.html">REVIEWS DA LOJA</a>
-        <a href="insignias.html">INSIGNIAS</a>
-        <a href="desejos.html">LISTA DE DESEJOS</a>
-        <a href="carrinho.html">CARRINHO</a>
-    </header>
-
-
-
-    <footer>
-        <p>2026 Stim. Todos os direitos reservados.</p>
-    </footer>
-    
+<body class="pagina-kaua">
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+  <header>
+    <a class="marca" href="index.html" aria-label="Stim, ir para a loja">Stim</a>
+    <nav aria-label="Navegação principal"><a href="index.html">Loja</a>
+<a href="biblioteca.html" aria-current="page">Biblioteca</a>
+<a href="comunidade.html">Comunidade</a>
+<a href="perfil.html">Perfil</a>
+<a href="reviews.html">Reviews da loja</a>
+<a href="insignias.html">Insígnias</a>
+<a href="desejos.html">Lista de desejos</a>
+<a href="carrinho.html">Carrinho</a></nav>
+  </header>
+  <main id="conteudo" tabindex="-1">
+<section class="cabecalho-pagina" aria-labelledby="titulo-biblioteca">
+ <div><p class="sobretitulo">SEU ESPAÇO PARA JOGAR</p><h1 id="titulo-biblioteca">Minha biblioteca</h1><p class="introducao">Seus jogos, suas próximas aventuras.</p></div>
+ <a class="botao secundario" href="perfil.html">Ver meu perfil <span aria-hidden="true">↗</span></a>
+</section>
+<section class="destaque-biblioteca" aria-labelledby="continuar-titulo">
+ <div class="destaque-texto"><span class="etiqueta">Jogado recentemente</span><h2 id="continuar-titulo">De volta ao campo?</h2><p>FIFO 2002 está na sua biblioteca. Confira seu tempo de jogo e acompanhe suas conquistas.</p><a class="botao" href="#fifo-detalhes">Ver FIFO 2002 <span aria-hidden="true">↓</span></a></div>
+ <img src="img/FIFO2002.jpg" alt="Arte do jogo de futebol FIFO 2002" width="600" height="350">
+</section>
+<section class="colecao" aria-labelledby="colecao-titulo">
+ <div class="titulo-secao"><h2 id="colecao-titulo">Sua coleção</h2><span class="texto-secundario">4 jogos · 3 instalados · 2 favoritos</span></div>
+ <fieldset class="filtros"><legend>Filtrar jogos</legend>
+ <input type="radio" name="filtro" id="todos" checked><label for="todos">Todos (4)</label>
+ <input type="radio" name="filtro" id="instalados"><label for="instalados">Instalados (3)</label>
+ <input type="radio" name="filtro" id="favoritos"><label for="favoritos">Favoritos (2)</label>
+ <div class="grade-jogos"><article id="fifo-detalhes" class="jogo instalado favorito">
+ <img class="capa-jogo" src="img/FIFO2002.jpg" alt="Capa de FIFO 2002" width="480" height="300">
+ <div class="jogo-conteudo"><div class="linha-status"><span class="etiqueta">Instalado</span><span class="favorito-texto">★ Favorito</span></div>
+ <h2>FIFO 2002</h2><p class="texto-secundario">Futebol</p>
+ <dl class="dados-jogo"><div><dt>Tempo de jogo</dt><dd>32 h</dd></div><div><dt>Última sessão</dt><dd>Ontem</dd></div></dl>
+ <div class="progresso-titulo"><label for="progresso-0">Conquistas</label><span>68%</span></div>
+ <progress id="progresso-0" max="100" value="68">68% das conquistas</progress>
+ <details class="detalhes-jogo"><summary>Ver detalhes</summary><p>FIFO 2002 faz parte desta biblioteca demonstrativa. A execução e a instalação de jogos não estão disponíveis neste projeto visual.</p><a href="insignias.html">Consultar insígnias do perfil →</a></details>
+ </div></article><article class="jogo instalado">
+ <img class="capa-jogo" src="img/CiÉs3.jpg" alt="Capa de CiÉs 3" width="480" height="300">
+ <div class="jogo-conteudo"><div class="linha-status"><span class="etiqueta">Instalado</span></div>
+ <h2>CiÉs 3</h2><p class="texto-secundario">Ação competitiva</p>
+ <dl class="dados-jogo"><div><dt>Tempo de jogo</dt><dd>18 h</dd></div><div><dt>Última sessão</dt><dd>Há 2 dias</dd></div></dl>
+ <div class="progresso-titulo"><label for="progresso-1">Conquistas</label><span>40%</span></div>
+ <progress id="progresso-1" max="100" value="40">40% das conquistas</progress>
+ <details class="detalhes-jogo"><summary>Ver detalhes</summary><p>CiÉs 3 faz parte desta biblioteca demonstrativa. A execução e a instalação de jogos não estão disponíveis neste projeto visual.</p><a href="insignias.html">Consultar insígnias do perfil →</a></details>
+ </div></article><article class="jogo instalado favorito">
+ <img class="capa-jogo" src="img/gti6.jpg" alt="Capa de GTI IV" width="480" height="300">
+ <div class="jogo-conteudo"><div class="linha-status"><span class="etiqueta">Instalado</span><span class="favorito-texto">★ Favorito</span></div>
+ <h2>GTI IV</h2><p class="texto-secundario">Mundo aberto</p>
+ <dl class="dados-jogo"><div><dt>Tempo de jogo</dt><dd>12 h</dd></div><div><dt>Última sessão</dt><dd>Há 4 dias</dd></div></dl>
+ <div class="progresso-titulo"><label for="progresso-2">Conquistas</label><span>25%</span></div>
+ <progress id="progresso-2" max="100" value="25">25% das conquistas</progress>
+ <details class="detalhes-jogo"><summary>Ver detalhes</summary><p>GTI IV faz parte desta biblioteca demonstrativa. A execução e a instalação de jogos não estão disponíveis neste projeto visual.</p><a href="insignias.html">Consultar insígnias do perfil →</a></details>
+ </div></article><article class="jogo nao-instalado">
+ <img class="capa-jogo" src="img/pikomon.jpg" alt="Capa de Pikomon" width="480" height="300">
+ <div class="jogo-conteudo"><div class="linha-status"><span class="etiqueta">Não instalado</span></div>
+ <h2>Pikomon</h2><p class="texto-secundario">Aventura</p>
+ <dl class="dados-jogo"><div><dt>Tempo de jogo</dt><dd>4 h</dd></div><div><dt>Última sessão</dt><dd>Há 1 semana</dd></div></dl>
+ <div class="progresso-titulo"><label for="progresso-3">Conquistas</label><span>10%</span></div>
+ <progress id="progresso-3" max="100" value="10">10% das conquistas</progress>
+ <details class="detalhes-jogo"><summary>Ver detalhes</summary><p>Pikomon faz parte desta biblioteca demonstrativa. A execução e a instalação de jogos não estão disponíveis neste projeto visual.</p><a href="insignias.html">Consultar insígnias do perfil →</a></details>
+ </div></article></div></fieldset>
+</section>
+<aside class="convite-loja"><div><h2>Procurando uma nova aventura?</h2><p>Veja os destaques e conheça outros jogos da Stim.</p></div><a class="botao secundario" href="index.html">Explorar a loja →</a></aside>
+<p class="nota-demo">Biblioteca demonstrativa: jogos, horas e progresso são exemplos para apresentar a interface.</p>
+</main>
+  <footer><p>2026 Stim. Todos os direitos reservados.</p><p class="rodape-nota">Projeto acadêmico · Tela desenvolvida por Kauã Santos</p></footer>
 </body>
 </html>
