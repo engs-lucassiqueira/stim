@@ -1,0 +1,175 @@
+﻿main {
+    width: min(1400px, calc(100% - 48px));
+    margin: 48px auto;
+}
+
+main section > h2 {
+    margin: 0 0 28px;
+    padding: 0 0 12px;
+    color: #d0d6d2;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    border-bottom: 3px solid #78c99a;
+}
+
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.destaques > div {
+    display: flex;
+    flex-direction: column;
+    min-height: 440px;
+    overflow: hidden;
+    background: #131614;
+    border: 1px solid #39443e;
+    border-radius: 12px;
+    color: #d0d6d2;
+    box-shadow: 0 8px 20px rgb(30 45 36 / 14%);
+    transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.destaques > div:hover {
+    transform: translateY(-5px);
+    border-color: #78c99a;
+    box-shadow: 0 14px 28px rgb(30 45 36 / 22%);
+}
+
+.destaques h3,
+.destaques p {
+    margin: 16px 18px 0;
+}
+
+.destaques h3 {
+    color: #f1f5f2;
+    font-size: 1.35rem;
+}
+
+.destaques p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.destaques p:nth-of-type(2) {
+    margin-top: auto;
+    padding-top: 20px;
+    color: #78c99a;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.destaques img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    margin-top: 16px;
+}
+
+.populares {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.populares > div {
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr) auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "imagem nome preco"
+        "imagem descricao preco";
+    align-items: center;
+    column-gap: 20px;
+    min-height: 120px;
+    padding: 14px 20px;
+    color: #d0d6d2;
+    background: #131614;
+    border: 1px solid #39443e;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgb(30 45 36 / 14%);
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.populares > div:hover {
+    border-color: #78c99a;
+    box-shadow: 0 10px 24px rgb(30 45 36 / 22%);
+}
+
+.populares img {
+    grid-area: imagem;
+    display: block;
+    width: 112px;
+    height: 88px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.populares h4 {
+    grid-area: nome;
+    align-self: end;
+    margin: 0 0 4px;
+    color: #f1f5f2;
+    font-size: 1.2rem;
+}
+
+.populares p {
+    grid-area: descricao;
+    align-self: start;
+    margin: 0;
+    color: #aeb8b1;
+    line-height: 1.45;
+}
+
+.populares h3 {
+    grid-area: preco;
+    margin: 0;
+    color: #78c99a;
+    font-size: 1.15rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+    .destaques {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    main {
+        width: min(100% - 32px, 420px);
+        margin: 32px auto;
+    }
+
+    .destaques {
+        grid-template-columns: 1fr;
+    }
+
+    .populares > div {
+        grid-template-columns: 76px minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "imagem nome"
+            "imagem descricao"
+            "preco preco";
+        gap: 6px 12px;
+        padding: 12px;
+    }
+
+    .populares img {
+        width: 76px;
+        height: 76px;
+        grid-row: 1 / 3;
+    }
+
+    .populares h4 {
+        align-self: end;
+        font-size: 1.05rem;
+    }
+
+    .populares h3 {
+        justify-self: end;
+        padding-top: 4px;
+    }
+}
