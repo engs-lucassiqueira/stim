@@ -1,78 +1,37 @@
-/* Estilos destas duas telas; as páginas dos colegas usam seus próprios arquivos. */
-.pagina-kaua { color: #d0d6d2; line-height: 1.6; }
-.pagina-kaua a { color: #9be0b7; text-underline-offset: 4px; }
-.pagina-kaua header { gap: 20px 36px; }
-.pagina-kaua .marca { color: #78c99a; font-size: 1.8rem; font-weight: 700; text-decoration: none; }
-.pagina-kaua nav { display: flex; flex-wrap: wrap; gap: 8px 24px; flex: 1; }
-.pagina-kaua nav a { display: inline-flex; align-items: center; min-height: 44px; color: #d0d6d2; font-size: .86rem; text-transform: uppercase; text-decoration: none; border-bottom: 2px solid transparent; }
-.pagina-kaua nav a:hover, .pagina-kaua nav a[aria-current="page"] { color: #9be0b7; border-bottom-color: #78c99a; }
-.pagina-kaua :focus-visible { outline: 3px solid #b8f2cc; outline-offset: 5px; }
-.pagina-kaua .pular-conteudo { position: absolute; left: 12px; top: 8px; z-index: 10; background: #131614; padding: 12px 18px; transform: translateY(-160%); }
-.pagina-kaua .pular-conteudo:focus { transform: translateY(0); }
-.pagina-kaua main { width: min(1240px, calc(100% - 64px)); margin: 44px auto 56px; }
-.pagina-kaua h1 { color: #f1f5f2; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.2; margin: 6px 0 12px; }
-.pagina-kaua h2 { color: #f1f5f2; font-size: 1.4rem; line-height: 1.3; }
-.pagina-kaua h3 { color: #f1f5f2; line-height: 1.4; }
-.pagina-kaua .cabecalho-pagina { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-bottom: 32px; }
-.pagina-kaua .sobretitulo { color: #9be0b7; font-size: .75rem; font-weight: 700; letter-spacing: .14em; }
-.pagina-kaua .introducao, .pagina-kaua .texto-secundario { color: #b2bfb6; }
-.pagina-kaua .botao { display: inline-flex; justify-content: center; align-items: center; gap: 18px; min-height: 46px; padding: 10px 20px; border: 1px solid #78c99a; border-radius: 7px; background: #78c99a; color: #101c15; text-decoration: none; font-weight: 600; text-align: center; }
-.pagina-kaua .botao:hover { background: #9be0b7; border-color: #9be0b7; }
-.pagina-kaua .botao.secundario { background: transparent; color: #b4e8c6; border-color: #536d5e; }
-.pagina-kaua .botao.secundario:hover { background: #314438; border-color: #9be0b7; }
-.pagina-kaua .etiqueta { display: inline-block; color: #b4e8c6; background: #263d30; border-radius: 5px; padding: 4px 10px; font-size: .75rem; }
-.pagina-kaua .titulo-secao { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 22px; }
-.pagina-kaua .titulo-secao > span, .pagina-kaua .titulo-secao > a { font-size: .86rem; }
-.pagina-kaua .nota-demo { color: #b2bfb6; font-size: .8rem; margin-top: 28px; }
-.pagina-kaua .rodape-nota { margin-top: 4px; font-size: .75rem; color: #b2bfb6; }
-@media (max-width: 700px) {
- .pagina-kaua header { padding: 16px 20px; gap: 8px; align-items: flex-start; }
- .pagina-kaua nav { flex-basis: 100%; gap: 4px 18px; }
- .pagina-kaua nav a { font-size: .75rem; }
- .pagina-kaua main { width: calc(100% - 36px); margin-top: 28px; }
- .pagina-kaua .cabecalho-pagina { align-items: flex-start; flex-direction: column; gap: 18px; }
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    color: #d0d6d2;
 }
 
-.destaque-biblioteca { display: grid; grid-template-columns: 1fr 1fr; background: #131614; border: 1px solid #39443e; border-radius: 12px; overflow: hidden; margin-bottom: 40px; }
-.destaque-texto { padding: 32px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 18px; }
-.destaque-texto h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
-.destaque-texto p { max-width: 44ch; color: #b2bfb6; }
-.destaque-biblioteca > img { display: block; width: 100%; height: 100%; min-height: 300px; object-fit: cover; }
-.filtros { border: 0; min-width: 0; }
-.filtros legend { margin-bottom: 12px; font-size: .85rem; color: #b2bfb6; }
-.filtros > input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-.filtros > label { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 18px; margin: 0 8px 12px 0; color: #d0d6d2; background: #131614; border: 1px solid #536d5e; border-radius: 6px; cursor: pointer; }
-.filtros > input:checked + label { background: #78c99a; color: #101c15; border-color: #78c99a; font-weight: 600; }
-.filtros > input:focus-visible + label { outline: 3px solid #b8f2cc; outline-offset: 4px; }
-.grade-jogos { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 12px; }
-#instalados:checked ~ .grade-jogos .jogo:not(.instalado), #favoritos:checked ~ .grade-jogos .jogo:not(.favorito) { display: none; }
-.jogo { min-width: 0; background: #131614; border: 1px solid #39443e; border-radius: 10px; overflow: hidden; scroll-margin-top: 24px; }
-.capa-jogo { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
-.jogo-conteudo { padding: 18px; }
-.linha-status { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
-.favorito-texto { font-size: .72rem; color: #edce83; }
-.jogo h2 { margin-bottom: 3px; }
-.jogo .texto-secundario { font-size: .85rem; }
-.dados-jogo { margin: 20px 0; }
-.dados-jogo > div { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 6px; font-size: .8rem; }
-.dados-jogo dt { color: #b2bfb6; }
-.dados-jogo dd { color: #f1f5f2; text-align: right; }
-.progresso-titulo { display: flex; justify-content: space-between; font-size: .78rem; gap: 8px; }
-.jogo progress { display: block; width: 100%; height: 7px; margin: 9px 0 20px; border: 0; border-radius: 10px; overflow: hidden; appearance: none; background: #39443e; accent-color: #78c99a; }
-.jogo progress::-webkit-progress-bar { background: #39443e; }
-.jogo progress::-webkit-progress-value { background: #78c99a; }
-.jogo progress::-moz-progress-bar { background: #78c99a; }
-.detalhes-jogo { border-top: 1px solid #39443e; }
-.detalhes-jogo summary { min-height: 44px; padding-top: 12px; color: #9be0b7; cursor: pointer; }
-.detalhes-jogo p, .detalhes-jogo a { font-size: .8rem; }
-.detalhes-jogo p { margin: 8px 0 12px; color: #b2bfb6; }
-.convite-loja { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-top: 36px; padding: 26px; border: 1px solid #536d5e; border-radius: 10px; }
-.convite-loja p { margin-top: 8px; color: #b2bfb6; }
-@media (max-width: 1100px) { .grade-jogos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 700px) {
- .destaque-biblioteca { grid-template-columns: 1fr; }
- .destaque-biblioteca > img { min-height: 0; height: 220px; grid-row: 1; }
- .destaque-texto { padding: 24px; }
- .convite-loja { flex-direction: column; align-items: flex-start; padding: 22px; }
+h1 {
+    margin-bottom: 15px;
 }
-@media (max-width: 480px) { .grade-jogos { grid-template-columns: 1fr; } .filtros > label { padding: 8px 12px; margin-right: 4px; } }
+
+p {
+    margin-bottom: 10px;
+}
+
+.jogo {
+    background-color: #131614;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.jogo img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+.jogo h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #78c99a;
+}
