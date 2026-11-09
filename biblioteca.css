@@ -1,37 +1,162 @@
 main {
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 30px auto;
     color: #d0d6d2;
 }
 
-h1 {
-    margin-bottom: 15px;
+main h1 {
+    margin-bottom: 8px;
+    color: #f1f5f2;
 }
 
-p {
-    margin-bottom: 10px;
+.subtitulo {
+    margin-bottom: 22px;
+    color: #aeb8b1;
+}
+
+.resumo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.resumo div {
+    padding: 16px;
+    background-color: #303a34;
+    border: 1px solid #46534b;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.resumo strong {
+    display: block;
+    color: #78c99a;
+    font-size: 1.6rem;
+}
+
+.resumo span {
+    color: #aeb8b1;
+    font-size: 0.85rem;
 }
 
 .jogo {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 22px;
+    padding: 18px;
+    margin-bottom: 18px;
     background-color: #131614;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    border: 1px solid #39443e;
     border-radius: 8px;
+    transition: border-color 160ms ease;
+}
+
+.jogo:hover {
+    border-color: #78c99a;
 }
 
 .jogo img {
     width: 100%;
-    max-width: 350px;
+    height: 100%;
+    max-height: 190px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
-.jogo h2 {
-    margin-top: 15px;
-    margin-bottom: 10px;
+.topo-jogo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 12px;
 }
 
-main a {
+.topo-jogo h2 {
+    color: #f1f5f2;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.instalado {
+    background-color: #78c99a;
+    color: #131614;
+}
+
+.nao-instalado {
+    background-color: #46534b;
+    color: #d0d6d2;
+}
+
+.dados {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px 18px;
+    margin-bottom: 14px;
+}
+
+.dados dt {
     color: #78c99a;
+    font-size: 0.8rem;
+}
+
+.dados dd {
+    color: #f1f5f2;
+}
+
+.conquistas p {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.barra {
+    height: 8px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    background-color: #303a34;
+    border-radius: 4px;
+}
+
+.barra div {
+    height: 100%;
+    background-color: #78c99a;
+}
+
+.botao {
+    display: inline-block;
+    padding: 9px 22px;
+    background-color: #78c99a;
+    color: #131614;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.botao:hover {
+    background-color: #92dbb0;
+}
+
+.link-perfil {
+    color: #78c99a;
+}
+
+@media (max-width: 700px) {
+    .resumo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jogo {
+        grid-template-columns: 1fr;
+    }
+
+    .jogo img {
+        max-height: 220px;
+    }
 }

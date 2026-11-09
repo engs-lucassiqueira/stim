@@ -10,20 +10,139 @@
 <body>
 
     <header>
-        <h2>Stim</h2>
-        <a href="index.html">LOJA</a>
-        <a href="biblioteca.html">BIBLIOTECA</a>
-        <a href="comunidade.html">COMUNIDADE</a>
-        <a href="perfil.html">PERFIL</a>
-        <a href="reviews.html">REVIEWS DA LOJA</a>
-        <a href="insignias.html">INSIGNIAS</a>
-        <a href="desejos.html">LISTA DE DESEJOS</a>
-        <a href="carrinho.html">CARRINHO</a>
+        <a href="index.html" class="logo"><h2>Stim</h2></a>
+        <nav>
+            <a href="index.html">LOJA</a>
+            <a href="biblioteca.html">BIBLIOTECA</a>
+            <a href="comunidade.html" aria-current="page">COMUNIDADE</a>
+            <a href="perfil.html">PERFIL</a>
+            <a href="reviews.html">REVIEWS DA LOJA</a>
+            <a href="insignias.html">INSÍGNIAS</a>
+            <a href="desejos.html">LISTA DE DESEJOS</a>
+            <a href="carrinho.html">CARRINHO</a>
+        </nav>
     </header>
-    
+
+    <main class="pagina-comunidade">
+
+        <section class="titulo-pagina">
+            <h1>Comunidade</h1>
+            <p>Converse com outros jogadores, compartilhe dicas e participe dos grupos.</p>
+        </section>
+
+        <div class="conteudo-comunidade">
+
+            <section class="lista-posts">
+                <h2>Discussões recentes</h2>
+
+                <article class="post">
+                    <div class="autor">
+                        <img class="avatar" src="img/foto-perfil.png" alt="Foto de Javali444">
+                        <div>
+                            <strong>Javali444</strong>
+                            <span>há 2 horas · FIFO 2002</span>
+                        </div>
+                    </div>
+                    <h3>Melhor formação para o modo carreira?</h3>
+                    <p>Estou usando o 4-3-3, mas meu time toma muito gol no contra-ataque. Alguém tem uma formação mais defensiva para indicar?</p>
+                    <div class="reacoes">
+                        <span>👍 24</span>
+                        <span>💬 12 respostas</span>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="autor">
+                        <div class="avatar">MR</div>
+                        <div>
+                            <strong>MariRush</strong>
+                            <span>há 5 horas · CiÉs 3</span>
+                        </div>
+                    </div>
+                    <h3>Procurando time para o campeonato do fim de semana</h3>
+                    <p>Preciso de mais dois jogadores para fechar o time. Jogamos à noite, de sexta a domingo. Quem tiver interesse comenta aqui!</p>
+                    <div class="reacoes">
+                        <span>👍 41</span>
+                        <span>💬 19 respostas</span>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="autor">
+                        <div class="avatar">PT</div>
+                        <div>
+                            <strong>PedroTreinador</strong>
+                            <span>ontem · Pikomon</span>
+                        </div>
+                    </div>
+                    <h3>Guia: como capturar criaturas raras</h3>
+                    <p>Juntei todas as dicas que aprendi: os melhores horários, os locais e os itens que aumentam a chance de captura.</p>
+                    <div class="reacoes">
+                        <span>👍 87</span>
+                        <span>💬 33 respostas</span>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="autor">
+                        <div class="avatar">JS</div>
+                        <div>
+                            <strong>JuSpeed</strong>
+                            <span>há 2 dias · GTI IV</span>
+                        </div>
+                    </div>
+                    <h3>Lugares escondidos no mapa</h3>
+                    <p>Achei uma praia secreta no norte do mapa que não aparece em nenhum guia. Alguém mais encontrou lugares assim?</p>
+                    <div class="reacoes">
+                        <span>👍 15</span>
+                        <span>💬 7 respostas</span>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="lateral">
+                <section class="grupos">
+                    <h2>Grupos populares</h2>
+                    <ul>
+                        <li>
+                            <strong>Fãs de Futebol</strong>
+                            <span>12.430 membros</span>
+                        </li>
+                        <li>
+                            <strong>FPS Competitivo</strong>
+                            <span>8.912 membros</span>
+                        </li>
+                        <li>
+                            <strong>Treinadores Pikomon</strong>
+                            <span>6.205 membros</span>
+                        </li>
+                        <li>
+                            <strong>Mundo Aberto BR</strong>
+                            <span>4.778 membros</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="regras">
+                    <h2>Regras da comunidade</h2>
+                    <ol>
+                        <li>Respeite todos os jogadores.</li>
+                        <li>Não compartilhe dados pessoais.</li>
+                        <li>Evite spoilers sem aviso.</li>
+                        <li>Poste no grupo do jogo certo.</li>
+                    </ol>
+                </section>
+            </aside>
+
+        </div>
+
+    </main>
+
     <footer>
-        <p>2026 Stim. Todos os direitos reservados.</p>
+        <p>2026 Stim - Projeto acadêmico. Todos os direitos reservados.</p>
     </footer>
-    
+
+    <script src="carrinho.js"></script>
+
 </body>
 </html>

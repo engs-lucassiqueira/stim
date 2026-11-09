@@ -67,6 +67,18 @@ main section > h2 {
     margin-top: 16px;
 }
 
+.destaques .btn-carrinho {
+    margin: 14px 18px 18px;
+}
+
+.populares .compra {
+    grid-area: preco;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
 .populares {
     display: flex;
     flex-direction: column;
@@ -75,11 +87,12 @@ main section > h2 {
 
 .populares > div {
     display: grid;
-    grid-template-columns: 112px minmax(0, 1fr) auto;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 110px minmax(0, 1fr) auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "imagem nome preco"
-        "imagem descricao preco";
+        "imagem descricao preco"
+        "imagem info preco";
     align-items: center;
     column-gap: 20px;
     min-height: 120px;
@@ -100,10 +113,17 @@ main section > h2 {
 .populares img {
     grid-area: imagem;
     display: block;
-    width: 112px;
-    height: 88px;
+    width: 110px;
+    height: 165px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 8px;
+    box-shadow: 0 6px 14px rgb(0 0 0 / 35%);
+}
+
+.populares img.capa-paisagem {
+    object-fit: contain;
+    background-color: #05060f;
 }
 
 .populares h4 {
@@ -120,6 +140,22 @@ main section > h2 {
     margin: 0;
     color: #aeb8b1;
     line-height: 1.45;
+}
+
+.populares .info-jogo {
+    grid-area: info;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 18px;
+    margin-top: 8px;
+    list-style: none;
+    color: #aeb8b1;
+    font-size: 0.85rem;
+}
+
+.populares .info-jogo strong {
+    color: #78c99a;
+    font-weight: 600;
 }
 
 .populares h3 {
@@ -147,20 +183,32 @@ main section > h2 {
     }
 
     .populares > div {
-        grid-template-columns: 76px minmax(0, 1fr);
-        grid-template-rows: auto auto auto;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
         grid-template-areas:
-            "imagem nome"
-            "imagem descricao"
-            "preco preco";
+            "imagem"
+            "nome"
+            "descricao"
+            "info"
+            "preco";
         gap: 6px 12px;
         padding: 12px;
     }
 
+    .populares .info-jogo {
+        flex-direction: column;
+    }
+
     .populares img {
-        width: 76px;
-        height: 76px;
-        grid-row: 1 / 3;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2 / 3;
+        max-height: 420px;
+        margin-bottom: 6px;
+    }
+
+    .populares img.capa-paisagem {
+        aspect-ratio: 16 / 10;
     }
 
     .populares h4 {
@@ -171,5 +219,12 @@ main section > h2 {
     .populares h3 {
         justify-self: end;
         padding-top: 4px;
+    }
+
+    .populares .compra {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 6px;
     }
 }

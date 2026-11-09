@@ -10,15 +10,17 @@
 <body>
 
     <header>
-        <h2>Stim</h2>
-        <a href="index.html">LOJA</a>
-        <a href="biblioteca.html">BIBLIOTECA</a>
-        <a href="comunidade.html">COMUNIDADE</a>
-        <a href="perfil.html">PERFIL</a>
-        <a href="reviews.html">REVIEWS DA LOJA</a>
-        <a href="insignias.html">INSIGNIAS</a>
-        <a href="desejos.html" aria-current="page">LISTA DE DESEJOS</a>
-        <a href="carrinho.html">CARRINHO</a>
+        <a href="index.html" class="logo"><h2>Stim</h2></a>
+        <nav>
+            <a href="index.html">LOJA</a>
+            <a href="biblioteca.html">BIBLIOTECA</a>
+            <a href="comunidade.html">COMUNIDADE</a>
+            <a href="perfil.html">PERFIL</a>
+            <a href="reviews.html">REVIEWS DA LOJA</a>
+            <a href="insignias.html">INSÍGNIAS</a>
+            <a href="desejos.html" aria-current="page">LISTA DE DESEJOS</a>
+            <a href="carrinho.html">CARRINHO</a>
+        </nav>
     </header>
 
     <main class="pagina-desejos">
@@ -41,7 +43,7 @@
 
                 <div class="preco-jogo">
                     <p>R$ 799,99</p>
-                    <a href="carrinho.html" class="botao">Adicionar ao carrinho</a>
+                    <button type="button" class="btn-carrinho" data-add-carrinho data-nome="FIFO 2002" data-genero="Futebol" data-preco="799.99" data-imagem="img/FIFO2002.jpg">Adicionar ao carrinho</button>
                 </div>
             </article>
 
@@ -56,7 +58,7 @@
 
                 <div class="preco-jogo">
                     <p>R$ 2.999,99</p>
-                    <a href="carrinho.html" class="botao">Adicionar ao carrinho</a>
+                    <button type="button" class="btn-carrinho" data-add-carrinho data-nome="CiÉs 3" data-genero="Ação / FPS" data-preco="2999.99" data-imagem="img/CiÉs3.jpg">Adicionar ao carrinho</button>
                 </div>
             </article>
 
@@ -71,7 +73,7 @@
 
                 <div class="preco-jogo">
                     <p>R$ 78,29</p>
-                    <a href="carrinho.html" class="botao">Adicionar ao carrinho</a>
+                    <button type="button" class="btn-carrinho" data-add-carrinho data-nome="GTI IV" data-genero="Mundo aberto" data-preco="78.29" data-imagem="img/gti6.jpg">Adicionar ao carrinho</button>
                 </div>
             </article>
 
@@ -86,7 +88,7 @@
 
                 <div class="preco-jogo">
                     <p>Gratuito</p>
-                    <a href="carrinho.html" class="botao">Ver no carrinho</a>
+                    <button type="button" class="btn-carrinho" data-add-carrinho data-nome="Pikomon" data-genero="Aventura" data-preco="0" data-imagem="img/pikomon.jpg">Adicionar ao carrinho</button>
                 </div>
             </article>
 
@@ -99,8 +101,10 @@
     </main>
 
     <footer>
-        <p>2026 Stim. Todos os direitos reservados.</p>
+        <p>2026 Stim - Projeto acadêmico. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="carrinho.js"></script>
 
 </body>
 </html>

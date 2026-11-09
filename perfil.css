@@ -5,36 +5,54 @@ main {
     color: #d0d6d2;
 }
 
-h1 {
+main h1 {
     margin-bottom: 20px;
 }
 
-h2,
-h3 {
+main h2,
+main h3 {
     margin-bottom: 15px;
 }
 
-p {
+main p {
     margin-bottom: 10px;
 }
 
-section {
+main section {
     background-color: #131614;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
 }
 
+.cartao-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cartao-perfil h2 {
+    margin-bottom: 4px;
+    color: #f1f5f2;
+    font-size: 1.6rem;
+}
+
+.usuario {
+    color: #78c99a;
+}
+
 .foto {
-    width: 85px;
-    height: 85px;
-    background-color: #78c99a;
-    color: #131614;
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center 30%;
+    border: 3px solid #78c99a;
     border-radius: 50%;
-    text-align: center;
-    line-height: 85px;
-    font-size: 22px;
-    margin-bottom: 15px;
+}
+
+.biografia p {
+    line-height: 1.5;
 }
 
 .insignia {

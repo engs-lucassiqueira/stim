@@ -9,62 +9,141 @@
 </head>
 <body>
     <header>
-        <h2>Stim</h2>
-
+        <a href="index.html" class="logo"><h2>Stim</h2></a>
         <nav>
-            <a href="index.html">Loja</a>
-            <a href="biblioteca.html">Biblioteca</a>
-            <a href="comunidade.html">Comunidade</a>
-            <a href="perfil.html">Perfil</a>
-            <a href="reviews.html">Reviews da loja</a>
-            <a href="insignias.html">Insígnias</a>
-            <a href="desejos.html">Lista de desejos</a>
-            <a href="carrinho.html">Carrinho</a>
+            <a href="index.html">LOJA</a>
+            <a href="biblioteca.html" aria-current="page">BIBLIOTECA</a>
+            <a href="comunidade.html">COMUNIDADE</a>
+            <a href="perfil.html">PERFIL</a>
+            <a href="reviews.html">REVIEWS DA LOJA</a>
+            <a href="insignias.html">INSÍGNIAS</a>
+            <a href="desejos.html">LISTA DE DESEJOS</a>
+            <a href="carrinho.html">CARRINHO</a>
         </nav>
     </header>
 
     <main>
         <h1>Minha biblioteca</h1>
-        <p>Esses são os jogos da minha coleção.</p>
+        <p class="subtitulo">Esses são os jogos da minha coleção.</p>
 
-        <div class="jogo">
-            <img src="img/FIFO2002.jpg" alt="FIFO 2002">
-            <h2>FIFO 2002</h2>
-            <p>Gênero: Futebol</p>
-            <p>Tempo jogado: 32 horas</p>
-            <p>Status: Instalado</p>
-        </div>
+        <section class="resumo">
+            <div><strong>4</strong><span>Jogos</span></div>
+            <div><strong>66 h</strong><span>Tempo total jogado</span></div>
+            <div><strong>12,5 h</strong><span>Últimas 2 semanas</span></div>
+            <div><strong>49</strong><span>Conquistas</span></div>
+        </section>
 
-        <div class="jogo">
-            <img src="img/CiÉs3.jpg" alt="CiÉs 3">
-            <h2>CiÉs 3</h2>
-            <p>Gênero: Ação</p>
-            <p>Tempo jogado: 18 horas</p>
-            <p>Status: Instalado</p>
-        </div>
+        <article class="jogo">
+            <img src="img/FIFO2002.jpg" alt="Capa do jogo FIFO 2002">
 
-        <div class="jogo">
-            <img src="img/gti6.jpg" alt="GTI IV">
-            <h2>GTI IV</h2>
-            <p>Gênero: Mundo aberto</p>
-            <p>Tempo jogado: 12 horas</p>
-            <p>Status: Instalado</p>
-        </div>
+            <div class="info-jogo">
+                <div class="topo-jogo">
+                    <h2>FIFO 2002</h2>
+                    <span class="status instalado">Instalado</span>
+                </div>
 
-        <div class="jogo">
-            <img src="img/pikomon.jpg" alt="Pikomon">
-            <h2>Pikomon</h2>
-            <p>Gênero: Aventura</p>
-            <p>Tempo jogado: 4 horas</p>
-            <p>Status: Não instalado</p>
-        </div>
+                <dl class="dados">
+                    <div><dt>Gênero</dt><dd>Futebol</dd></div>
+                    <div><dt>Desenvolvedora</dt><dd>AE Esportes</dd></div>
+                    <div><dt>Tempo jogado</dt><dd>32 h</dd></div>
+                    <div><dt>Últimas 2 semanas</dt><dd>5,4 h</dd></div>
+                    <div><dt>Última sessão</dt><dd>Hoje, 14:32</dd></div>
+                </dl>
 
-        <a href="perfil.html">Ver meu perfil</a>
+                <div class="conquistas">
+                    <p>Conquistas: 24 de 40 (60%)</p>
+                    <div class="barra"><div style="width: 60%"></div></div>
+                </div>
+
+                <a href="#" class="botao">Jogar</a>
+            </div>
+        </article>
+
+        <article class="jogo">
+            <img src="img/CiÉs3.jpg" alt="Capa do jogo CiÉs 3">
+
+            <div class="info-jogo">
+                <div class="topo-jogo">
+                    <h2>CiÉs 3</h2>
+                    <span class="status instalado">Instalado</span>
+                </div>
+
+                <dl class="dados">
+                    <div><dt>Gênero</dt><dd>Ação / FPS competitivo</dd></div>
+                    <div><dt>Desenvolvedora</dt><dd>Vale Corp</dd></div>
+                    <div><dt>Tempo jogado</dt><dd>18 h</dd></div>
+                    <div><dt>Últimas 2 semanas</dt><dd>7,1 h</dd></div>
+                    <div><dt>Última sessão</dt><dd>Ontem, 22:10</dd></div>
+                </dl>
+
+                <div class="conquistas">
+                    <p>Conquistas: 13 de 30 (43%)</p>
+                    <div class="barra"><div style="width: 43%"></div></div>
+                </div>
+
+                <a href="#" class="botao">Jogar</a>
+            </div>
+        </article>
+
+        <article class="jogo">
+            <img src="img/gti6.jpg" alt="Capa do jogo GTI IV">
+
+            <div class="info-jogo">
+                <div class="topo-jogo">
+                    <h2>GTI IV</h2>
+                    <span class="status instalado">Instalado</span>
+                </div>
+
+                <dl class="dados">
+                    <div><dt>Gênero</dt><dd>Mundo aberto</dd></div>
+                    <div><dt>Desenvolvedora</dt><dd>Rockestrela Games</dd></div>
+                    <div><dt>Tempo jogado</dt><dd>12 h</dd></div>
+                    <div><dt>Últimas 2 semanas</dt><dd>0 h</dd></div>
+                    <div><dt>Última sessão</dt><dd>02/11/2026</dd></div>
+                </dl>
+
+                <div class="conquistas">
+                    <p>Conquistas: 9 de 60 (15%)</p>
+                    <div class="barra"><div style="width: 15%"></div></div>
+                </div>
+
+                <a href="#" class="botao">Jogar</a>
+            </div>
+        </article>
+
+        <article class="jogo">
+            <img src="img/pikomon.jpg" alt="Capa do jogo Pikomon">
+
+            <div class="info-jogo">
+                <div class="topo-jogo">
+                    <h2>Pikomon</h2>
+                    <span class="status nao-instalado">Não instalado</span>
+                </div>
+
+                <dl class="dados">
+                    <div><dt>Gênero</dt><dd>Aventura</dd></div>
+                    <div><dt>Desenvolvedora</dt><dd>Game Fruta</dd></div>
+                    <div><dt>Tempo jogado</dt><dd>4 h</dd></div>
+                    <div><dt>Últimas 2 semanas</dt><dd>0 h</dd></div>
+                    <div><dt>Última sessão</dt><dd>15/09/2026</dd></div>
+                </dl>
+
+                <div class="conquistas">
+                    <p>Conquistas: 3 de 25 (12%)</p>
+                    <div class="barra"><div style="width: 12%"></div></div>
+                </div>
+
+                <a href="#" class="botao">Instalar</a>
+            </div>
+        </article>
+
+        <a href="perfil.html" class="link-perfil">Ver meu perfil</a>
     </main>
 
     <footer>
-        <p>Stim - Projeto acadêmico</p>
-        <p>Kauã Santos - 2026</p>
+        <p>2026 Stim - Projeto acadêmico. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="carrinho.js"></script>
 </body>
 </html>
