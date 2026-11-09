@@ -1,0 +1,143 @@
+main.pagina-desejos {
+    width: min(1100px, calc(100% - 48px));
+    margin: 42px auto;
+    color: #d0d6d2;
+}
+
+.titulo-pagina {
+    margin-bottom: 28px;
+}
+
+.titulo-pagina h1 {
+    margin-bottom: 10px;
+    color: #f1f5f2;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+}
+
+.titulo-pagina p {
+    color: #aeb8b1;
+    line-height: 1.5;
+}
+
+.lista-jogos {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.jogo-desejo {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 22px;
+    padding: 16px;
+    background: #131614;
+    border: 1px solid #39443e;
+    border-radius: 10px;
+}
+
+.jogo-desejo img {
+    width: 180px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.info-jogo h2 {
+    margin-bottom: 8px;
+    color: #f1f5f2;
+    font-size: 1.25rem;
+}
+
+.info-jogo p {
+    margin-bottom: 12px;
+    color: #aeb8b1;
+}
+
+.disponivel,
+.gratuito {
+    color: #78c99a;
+    font-size: 0.9rem;
+}
+
+.preco-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 14px;
+}
+
+.preco-jogo p {
+    color: #78c99a;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 14px;
+    color: #131614;
+    background: #78c99a;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.botao:hover {
+    background: #91d9ad;
+}
+
+.voltar-loja {
+    margin-top: 24px;
+}
+
+.voltar-loja a {
+    color: #78c99a;
+    text-decoration: none;
+}
+
+.voltar-loja a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    main.pagina-desejos {
+        width: calc(100% - 32px);
+        margin: 30px auto;
+    }
+
+    .jogo-desejo {
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .jogo-desejo img {
+        width: 110px;
+        height: 90px;
+    }
+
+    .preco-jogo {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        border-top: 1px solid #39443e;
+    }
+}
+
+@media (max-width: 380px) {
+    .jogo-desejo {
+        grid-template-columns: 1fr;
+    }
+
+    .jogo-desejo img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .preco-jogo {
+        grid-column: auto;
+    }
+}
