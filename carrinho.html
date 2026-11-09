@@ -10,15 +10,17 @@
 <body>
 
     <header>
-        <h2>Stim</h2>
-        <a href="index.html">LOJA</a>
-        <a href="biblioteca.html">BIBLIOTECA</a>
-        <a href="comunidade.html">COMUNIDADE</a>
-        <a href="perfil.html">PERFIL</a>
-        <a href="reviews.html">REVIEWS DA LOJA</a>
-        <a href="insignias.html">INSIGNIAS</a>
-        <a href="desejos.html">LISTA DE DESEJOS</a>
-        <a href="carrinho.html" aria-current="page">CARRINHO</a>
+        <a href="index.html" class="logo"><h2>Stim</h2></a>
+        <nav>
+            <a href="index.html">LOJA</a>
+            <a href="biblioteca.html">BIBLIOTECA</a>
+            <a href="comunidade.html">COMUNIDADE</a>
+            <a href="perfil.html">PERFIL</a>
+            <a href="reviews.html">REVIEWS DA LOJA</a>
+            <a href="insignias.html">INSÍGNIAS</a>
+            <a href="desejos.html">LISTA DE DESEJOS</a>
+            <a href="carrinho.html" aria-current="page">CARRINHO</a>
+        </nav>
     </header>
 
     <main class="pagina-carrinho">
@@ -32,35 +34,7 @@
 
             <section class="lista-carrinho">
 
-                <article class="item-carrinho">
-                    <img src="img/FIFO2002.jpg" alt="Capa do jogo FIFO 2002">
-
-                    <div class="info-item">
-                        <h2>FIFO 2002</h2>
-                        <p>Futebol</p>
-                        <span>Disponível para compra</span>
-                        <a href="desejos.html">Salvar na lista de desejos</a>
-                    </div>
-
-                    <div class="preco-item">
-                        <p>R$ 799,99</p>
-                    </div>
-                </article>
-
-                <article class="item-carrinho">
-                    <img src="img/gti6.jpg" alt="Capa do jogo GTI IV">
-
-                    <div class="info-item">
-                        <h2>GTI IV</h2>
-                        <p>Mundo aberto</p>
-                        <span>Disponível para compra</span>
-                        <a href="desejos.html">Salvar na lista de desejos</a>
-                    </div>
-
-                    <div class="preco-item">
-                        <p>R$ 78,29</p>
-                    </div>
-                </article>
+                <div id="itens-carrinho"></div>
 
                 <div class="continuar-comprando">
                     <a href="index.html">Continuar comprando</a>
@@ -72,8 +46,13 @@
                 <h2>Resumo do pedido</h2>
 
                 <div class="linha-resumo">
+                    <span>Itens</span>
+                    <span id="quantidade">0 jogos</span>
+                </div>
+
+                <div class="linha-resumo">
                     <span>Subtotal</span>
-                    <span>R$ 878,28</span>
+                    <span id="subtotal">R$ 0,00</span>
                 </div>
 
                 <div class="linha-resumo">
@@ -83,7 +62,7 @@
 
                 <div class="linha-resumo total">
                     <strong>Total</strong>
-                    <strong>R$ 878,28</strong>
+                    <strong id="total">R$ 0,00</strong>
                 </div>
 
                 <button type="button" disabled>Finalizar compra</button>
@@ -98,8 +77,10 @@
     </main>
 
     <footer>
-        <p>2026 Stim. Todos os direitos reservados.</p>
+        <p>2026 Stim - Projeto acadêmico. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="carrinho.js"></script>
 
 </body>
 </html>

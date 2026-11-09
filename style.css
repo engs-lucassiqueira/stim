@@ -27,9 +27,24 @@ header h2 {
     margin-right: 12px;
 }
 
+header .logo {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 36px;
+}
+
 header a {
     color: #d0d6d2;
     text-decoration: none;
+}
+
+header a[aria-current="page"] {
+    color: #78c99a;
+    font-weight: 600;
 }
 
 header a:hover {
@@ -43,4 +58,26 @@ footer {
     color: #d0d6d2;
     text-align: center;
     font-size: 14px;
+}
+
+.btn-carrinho {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #78c99a;
+    color: #131614;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 160ms ease;
+}
+
+.btn-carrinho:hover {
+    background-color: #92dbb0;
+}
+
+.btn-carrinho.adicionado {
+    background-color: #303a34;
+    color: #78c99a;
+    border: 1px solid #78c99a;
 }

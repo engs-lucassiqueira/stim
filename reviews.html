@@ -6,24 +6,113 @@
     <title>Reviews | Stim</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reviews.css">
-</head> 
+</head>
 <body>
 
     <header>
-        <h2>Stim</h2>
-        <a href="index.html">LOJA</a>
-        <a href="biblioteca.html">BIBLIOTECA</a>
-        <a href="comunidade.html">COMUNIDADE</a>
-        <a href="perfil.html">PERFIL</a>
-        <a href="reviews.html">REVIEWS DA LOJA</a>
-        <a href="insignias.html">INSIGNIAS</a>
-        <a href="desejos.html">LISTA DE DESEJOS</a>
-        <a href="carrinho.html">CARRINHO</a>
+        <a href="index.html" class="logo"><h2>Stim</h2></a>
+        <nav>
+            <a href="index.html">LOJA</a>
+            <a href="biblioteca.html">BIBLIOTECA</a>
+            <a href="comunidade.html">COMUNIDADE</a>
+            <a href="perfil.html">PERFIL</a>
+            <a href="reviews.html" aria-current="page">REVIEWS DA LOJA</a>
+            <a href="insignias.html">INSÍGNIAS</a>
+            <a href="desejos.html">LISTA DE DESEJOS</a>
+            <a href="carrinho.html">CARRINHO</a>
+        </nav>
     </header>
-    
+
+    <main class="pagina-reviews">
+
+        <section class="titulo-pagina">
+            <h1>Reviews da loja</h1>
+            <p>Veja o que os jogadores estão achando dos jogos da Stim.</p>
+        </section>
+
+        <section class="resumo-notas">
+            <div class="nota-geral">
+                <strong>4,3</strong>
+                <span>★★★★☆</span>
+                <p>Média de 1.284 avaliações</p>
+            </div>
+
+            <ul class="barras">
+                <li><span>5 ★</span><div class="barra"><div style="width: 62%"></div></div><span>62%</span></li>
+                <li><span>4 ★</span><div class="barra"><div style="width: 21%"></div></div><span>21%</span></li>
+                <li><span>3 ★</span><div class="barra"><div style="width: 9%"></div></div><span>9%</span></li>
+                <li><span>2 ★</span><div class="barra"><div style="width: 5%"></div></div><span>5%</span></li>
+                <li><span>1 ★</span><div class="barra"><div style="width: 3%"></div></div><span>3%</span></li>
+            </ul>
+        </section>
+
+        <section class="lista-reviews">
+
+            <article class="review">
+                <img src="img/FIFO2002.jpg" alt="Capa do jogo FIFO 2002">
+                <div class="info-review">
+                    <div class="cabecalho-review">
+                        <h2>FIFO 2002</h2>
+                        <span class="recomendado">Recomendado</span>
+                    </div>
+                    <p class="estrelas">★★★★★</p>
+                    <p>Os gráficos são incríveis e o modo carreira é muito viciante. Melhor jogo de futebol que já joguei!</p>
+                    <span class="autor-review">Javali444 · 32 horas jogadas</span>
+                </div>
+            </article>
+
+            <article class="review">
+                <img src="img/CiÉs3.jpg" alt="Capa do jogo CiÉs 3">
+                <div class="info-review">
+                    <div class="cabecalho-review">
+                        <h2>CiÉs 3</h2>
+                        <span class="recomendado">Recomendado</span>
+                    </div>
+                    <p class="estrelas">★★★★☆</p>
+                    <p>Jogabilidade competitiva muito boa e partidas rápidas. Só achei o preço um pouco alto.</p>
+                    <span class="autor-review">MariRush · 140 horas jogadas</span>
+                </div>
+            </article>
+
+            <article class="review">
+                <img src="img/gti6.jpg" alt="Capa do jogo GTI IV">
+                <div class="info-review">
+                    <div class="cabecalho-review">
+                        <h2>GTI IV</h2>
+                        <span class="nao-recomendado">Não recomendado</span>
+                    </div>
+                    <p class="estrelas">★★☆☆☆</p>
+                    <p>O mapa é grande, mas o jogo trava bastante em computadores mais fracos. Espero que corrijam logo.</p>
+                    <span class="autor-review">JuSpeed · 12 horas jogadas</span>
+                </div>
+            </article>
+
+            <article class="review">
+                <img src="img/pikomon.jpg" alt="Capa do jogo Pikomon">
+                <div class="info-review">
+                    <div class="cabecalho-review">
+                        <h2>Pikomon</h2>
+                        <span class="recomendado">Recomendado</span>
+                    </div>
+                    <p class="estrelas">★★★★★</p>
+                    <p>Gratuito e muito divertido! As criaturas são carismáticas e a história é ótima para jogar com amigos.</p>
+                    <span class="autor-review">PedroTreinador · 56 horas jogadas</span>
+                </div>
+            </article>
+
+        </section>
+
+        <div class="voltar-loja">
+            <a href="index.html">Voltar para a loja</a>
+        </div>
+
+    </main>
+
     <footer>
-        <p>2026 Stim. Todos os direitos reservados.</p>
+        <p>2026 Stim - Projeto acadêmico. Todos os direitos reservados.</p>
     </footer>
-    
+
+    <script src="carrinho.js"></script>
+
 </body>
 </html>

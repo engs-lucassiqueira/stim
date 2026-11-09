@@ -1,0 +1,193 @@
+.pagina-reviews {
+    width: calc(100% - 48px);
+    max-width: 1100px;
+    margin: 42px auto;
+    color: #d0d6d2;
+}
+
+.titulo-pagina {
+    margin-bottom: 28px;
+}
+
+.titulo-pagina h1 {
+    margin-bottom: 8px;
+    color: #f1f5f2;
+    font-size: 30px;
+}
+
+.titulo-pagina p {
+    color: #aebbb3;
+}
+
+.resumo-notas {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 32px;
+    align-items: center;
+    padding: 22px;
+    margin-bottom: 28px;
+    background: #303a34;
+    border: 1px solid #46534b;
+    border-radius: 10px;
+}
+
+.nota-geral {
+    text-align: center;
+}
+
+.nota-geral strong {
+    display: block;
+    color: #f1f5f2;
+    font-size: 48px;
+}
+
+.nota-geral span {
+    color: #78c99a;
+    font-size: 22px;
+}
+
+.nota-geral p {
+    margin-top: 6px;
+    color: #aebbb3;
+    font-size: 13px;
+}
+
+.barras {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.barras li {
+    display: grid;
+    grid-template-columns: 36px 1fr 40px;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.barra {
+    height: 10px;
+    overflow: hidden;
+    background: #131614;
+    border-radius: 5px;
+}
+
+.barra div {
+    height: 100%;
+    background: #78c99a;
+}
+
+.lista-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    padding: 16px;
+    background: #131614;
+    border: 1px solid #39443e;
+    border-radius: 10px;
+    transition: border-color 160ms ease;
+}
+
+.review:hover {
+    border-color: #78c99a;
+}
+
+.review img {
+    width: 180px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cabecalho-review {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.cabecalho-review h2 {
+    color: #f1f5f2;
+    font-size: 1.25rem;
+}
+
+.recomendado,
+.nao-recomendado {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.recomendado {
+    background: #78c99a;
+    color: #131614;
+}
+
+.nao-recomendado {
+    background: #8a4b4b;
+    color: #f1f5f2;
+}
+
+.estrelas {
+    margin-bottom: 8px;
+    color: #78c99a;
+    font-size: 18px;
+}
+
+.info-review p {
+    line-height: 1.5;
+}
+
+.autor-review {
+    display: block;
+    margin-top: 10px;
+    color: #aebbb3;
+    font-size: 13px;
+}
+
+.voltar-loja {
+    margin-top: 28px;
+}
+
+.voltar-loja a {
+    color: #78c99a;
+    text-decoration: none;
+}
+
+.voltar-loja a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .resumo-notas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    .pagina-reviews {
+        width: calc(100% - 28px);
+        margin: 28px auto;
+    }
+
+    .review {
+        grid-template-columns: 1fr;
+    }
+
+    .review img {
+        width: 100%;
+        height: 160px;
+    }
+}
